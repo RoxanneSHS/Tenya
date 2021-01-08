@@ -328,7 +328,7 @@ EraseJournalEntry(%jrnj%27445)
 EraseJournalEntry(%jrnj%27446)
 EraseJournalEntry(%jrnj%27063)~
 "REPLY"
-~So, what will you do, now?~
+~%string140%~
 "EPILOGUE"
 ~GOTO B2#TEN2a~
 END
@@ -353,7 +353,7 @@ EraseJournalEntry(%jrnj%27445)
 EraseJournalEntry(%jrnj%27446)
 EraseJournalEntry(%jrnj%27063)~
 "REPLY"
-~So, what will you do, now?~
+~%string140%~
 "EPILOGUE"
 ~GOTO B2#TEN1a~
 END

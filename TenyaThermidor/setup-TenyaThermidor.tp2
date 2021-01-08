@@ -31,6 +31,8 @@ REQUIRE_PREDICATE GAME_IS ~bgee eet~ ~Version for BGEE or EET only~
 
 ADD_SPELL "TenyaThermidor/Spells/B2#TNSTM.spl" 4 0 B2#TNSTM
 
+OUTER_SPRINT ~string140~ @140
+
 COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/Tenya.d~ USING  ~TenyaThermidor/tra/%s/Tenya.tra~
 COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#TenyJ.d~ USING   ~TenyaThermidor/tra/%s/B2#TenyJ.tra~
 COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#TenyP.d~ USING   ~TenyaThermidor/tra/%s/B2#TenyP.tra~
