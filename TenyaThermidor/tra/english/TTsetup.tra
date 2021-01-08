@@ -1,0 +1,114 @@
+@0    = ~This magical bowl holds great power in that it grants the owner a certain degree of control over magical creatures known as water elementals. As is the case with all elemental forces, this control can be turned toward either good or evil, law or chaos. One would therefore be well advised to use discretion when dealing with any such creatures.
+
+STATISTICS:
+
+Weight: 1~
+@1    = ~This magical bowl holds great power in that it grants the owner a certain degree of control over magical creatures known as water elementals. As is the case with all elemental forces, this control can be turned toward either good or evil, law or chaos. One would therefore be well advised to use discretion when dealing with any such creatures.
+
+STATISTICS:
+
+Abilities:
+Summon Lesser Water Elemental once per day.
+
+Weight: 1~
+@2    = ~This magical bowl holds great power in that it grants the owner a certain degree of control over magical creatures known as water elementals. As is the case with all elemental forces, this control can be turned toward either good or evil, law or chaos. One would therefore be well advised to use discretion when dealing with any such creatures.
+
+STATISTICS:
+
+Abilities:
+Summon Lesser Water Elemental once per day.
+Summon Water Elemental once per day.
+
+Weight: 1~
+@3    = ~This magical bowl holds great power in that it grants the owner a certain degree of control over magical creatures known as water elementals. As is the case with all elemental forces, this control can be turned toward either good or evil, law or chaos. One would therefore be well advised to use discretion when dealing with any such creatures.
+
+STATISTICS:
+
+Abilities:
+Summon Lesser Water Elemental once per day.
+Summon Water Elemental once per day.
+Summon Greater Water Elemental once per day.
+
+Weight: 1~
+@4    = ~Ring of Umberlee~
+@5    = ~Several of these rings were once made for wave servants of Umberlee. Most have been lost over the years, but a few have been passed down from generation to generation by those who have stayed loyal to the Sea Queen.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Saving Throws: +2
+- Can memorize one extra divine spell of each level.
+
+Weight: 0~
+@6    = ~Leena~
+@7    = ~Tenya's doll. You are not allowed to play with her, on pain of having your face sucked off by ravenous sea snails.
+
+STATISTICS:
+
+Weight: 1~
+@8    = ~Ebba +2~
+@9    = ~This powerful staff was once highly sought after by clerics of Umberlee, who believed it to have been sent to them by the sea goddess herself. Whether that is true or not, it is imbued with powerful magic, and its light weight and incredibly sharp blade attached make it a very potent weapon indeed. Some stories say that it not only protects, but will also grow over time with its chosen wielder.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Cold Resistance: +50%
+
+THAC0: +2
+Damage: 1d10+2 (slashing or piercing, whichever is better) + 1d4 Cold Damage
+Speed Factor: 7
+Proficiency Type: Quarterstaff
+Type: Two-handed
+
+Weight: 4~
+@10   = ~Well why don't you just put ME in charge?~
+@11   = ~*yawns* I'm not tired. Sleep is for sleepy people!~
+@12   = ~Sooo bored. Can we maim something, please?~
+@13   = ~Die a million deaths!~
+@14   = ~I shall have sharks chew your shins and eels sucking out your eyeballs...~
+@15   = ~It... does not hurt!~
+@16   = ~Bet I could climb that tree!~
+@17   = ~We should go there... Or maybe over there! Or that way is something too... Arrrg! It's too much!~
+@18   = ~This place smells of wee.~
+@19   = ~Are we there yet?~
+@20   = ~Should I be up this late?~
+@21   = ~What?~
+@22   = ~What do you want?~
+@23   = ~This had better be good.~
+@24   = ~Better not be wasting my time.~
+@25   = ~*singing* Oh, the fishes of the ocean, swim o'er the man's breast...~
+@26   = ~*sighs* Fine...~
+@27   = ~Is that all?~
+@28   = ~Too easy.~
+@29   = ~Winning is all that matters.~
+@30   = ~Fine. Leave the girl to take care of everything...~
+@31   = ~If I do it, will you buy me a present?~
+@32   = ~*singing* His body rolls in motion, his soul be now at rest...~
+@33   = ~It should be illegal to treat a child like this.~
+@34   = ~I am going to take that pointy-thing and spin you on it...~
+@35   = ~Ha!~
+@36   = ~Lucky that time...~
+@37   = ~I can't hurt them at all!~
+@38   = ~You can not expect a little girl to carry all that...~
+@39   = ~Despite her small size, this twelve year old priestess has power and skill rivalling that of any adult sister of her order.
+
+When asked about her past, her dark eyes flash angrily for a second before she brings herself under control. She claims to not remember anything of her father, nor care to. All her life that she recalls, she spent alone with her mother living in a small cabin outside of Baldur's Gate. Her mother never allowed guests to their home, nor for Tenya to venture anywhere without permission. Since the earliest age possible, the girl was indoctrinated with the teachings of the church of Umberlee. Her mother punished her severely for any weakness, and began training her daughter in combat as soon as she could hold a stick.
+
+And so it remained, until the night the fishermen came to their home. Tenya ran when they broke in, and from a hiding place watched as her mother, sluggish and drunk as she often was, was murdered before her eyes. Tenya only found the courage to emerge some time later, having to drag her mother's body out of the home and returning it to the sea, before pledging herself to Umberlee and embarking on a quest to retrieve the holy artifact the fishermen had stolen.
+
+From what you can tell, Tenya desperately desired the respect of her parent, yet lapsed many times while her mother was alive, wishing more from life than mere service. But after her mother's murder, she turned fully to the only other being she'd ever had a connection with - Umberlee, the Bitch Queen of the Seas.
+
+Tenya is still a child in many ways, despite her great anger. Naive at times and acting out rather than dealing with emotions. The fact she also posesses great power means she will need a very strong hand to guide her.~
+@40   = ~Lesser Water Elemental~
+@41   = ~Water Elemental~
+@42   = ~Greater Water Elemental~
+@43   = ~Naida~
+@44   = ~Kelda~
+@45   = ~Ran~
+@46   = ~Lethe~
+@10000 = ~EEP!~
+@10001 = ~Get back here, you grimy little gnome!~
+@5000002 = ~~

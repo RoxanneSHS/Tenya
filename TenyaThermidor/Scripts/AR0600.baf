@@ -1,0 +1,11 @@
+IF
+GlobalTimerExpired("B2#TenRan2T","GLOBAL")
+Global("BOYBODY","GLOBAL",0)
+Global("HelpTremain","GLOBAL",1)
+Global("B2#RanExists","%AR%0600",0)
+THEN
+RESPONSE #100
+SetGlobal("B2#TenRan2","GLOBAL",3)
+SetGlobal("B2#RanExists","%AR%0600",1)
+CreateCreature("B2#Ran2",[1175.761],S)
+END

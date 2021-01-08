@@ -1,0 +1,17 @@
+IF
+  Detect([PC])
+  See([PC])
+  Global("B2#TenQuest","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("B2#cTL01")
+END
+
+IF
+  HitBy([PC],CRUSHING)
+  Global("B2#TenQuest","GLOBAL",11)
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenQuest","GLOBAL",12)
+END

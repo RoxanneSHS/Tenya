@@ -1,0 +1,28 @@
+IF
+	GlobalLT("B2#TenRan2","GLOBAL",2)
+	!Detect("Tenya")
+	InParty("Tenya")
+THEN
+	RESPONSE #100
+		MoveToObject("Tenya")
+END
+
+IF
+	GlobalLT("B2#TenRan2","GLOBAL",2)
+	Detect("Tenya")
+	InParty("Tenya")
+	!StateCheck("Tenya",STATE_SLEEPING)
+	Global("B2#RanTalks","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("B2#RanTalks","LOCALS",1)
+		Dialogue("Tenya")
+END
+
+
+IF
+	Global("B2#TenRan2","GLOBAL",6)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END

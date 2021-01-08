@@ -1,0 +1,6 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,SURE_STONE_SHATTER)
+END

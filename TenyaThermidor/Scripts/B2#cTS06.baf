@@ -1,0 +1,12 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    setGlobal("B2#TenScrap","GLOBAL",8)
+    ActionOverride("B2#Ran",EscapeArea())
+    Wait(3)
+    ActionOverride("tenya",EscapeArea())
+    Wait(3)
+    EndCutSceneMode()
+END

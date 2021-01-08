@@ -1,0 +1,369 @@
+IF
+  !InParty(Myself)
+  OR(2)
+    AreaCheck("%AR%0609")
+    AreaCheck("%AR%0901")
+THEN
+  RESPONSE #100
+    RandomWalk()
+END
+
+IF
+  Global("B2#TenQuest","GLOBAL",12)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Global("B2#TenQuest","GLOBAL",14)
+  Dead("B2#LETHE")
+  !StateCheck([PC],STATE_SLEEPING)
+  CombatCounter(0)
+  !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenQuest","GLOBAL",15)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  InParty(Myself)
+  Global("TenXPUp","LOCALS",0)
+  CheckStatLT(Player1,20000,XP)
+THEN
+  RESPONSE #100
+    SetGlobal("TenXPUp","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenXPUp","LOCALS",0)
+  CheckStatGT(Player1,79999,XP)
+THEN
+  RESPONSE #100
+    AddXPObject(Myself,67000)
+    SetGlobal("TenXPUp","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenXPUp","LOCALS",0)
+  CheckStatGT(Player1,69999,XP)
+THEN
+  RESPONSE #100
+    AddXPObject(Myself,57000)
+    SetGlobal("TenXPUp","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenXPUp","LOCALS",0)
+  CheckStatGT(Player1,59999,XP)
+THEN
+  RESPONSE #100
+    AddXPObject(Myself,47000)
+    SetGlobal("TenXPUp","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenXPUp","LOCALS",0)
+  CheckStatGT(Player1,49999,XP)
+THEN
+  RESPONSE #100
+    AddXPObject(Myself,37000)
+    SetGlobal("TenXPUp","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenXPUp","LOCALS",0)
+  CheckStatGT(Player1,39999,XP)
+THEN
+  RESPONSE #100
+    AddXPObject(Myself,27000)
+    SetGlobal("TenXPUp","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenXPUp","LOCALS",0)
+  CheckStatGT(Player1,29999,XP)
+THEN
+  RESPONSE #100
+    AddXPObject(Myself,17000)
+    SetGlobal("TenXPUp","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenXPUp","LOCALS",0)
+  CheckStatGT(Player1,19999,XP)
+THEN
+  RESPONSE #100
+    AddXPObject(Myself,7000)
+    SetGlobal("TenXPUp","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenStorm10","LOCALS",0)
+  CheckStatGT(Myself,9,LEVEL)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,B2#TNSTM)
+    SetGlobal("TenStorm10","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenStorm20","LOCALS",0)
+  CheckStatGT(Myself,19,LEVEL)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,B2#TNSTM)
+    SetGlobal("TenStorm20","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenBowl2","LOCALS",0)
+  CheckStatGT(Myself,9,LEVEL)
+  PartyHasItem("B2#Bowl1")
+THEN
+  RESPONSE #100
+    TransformItem("B2#Bowl1","B2#Bowl2")
+    SetGlobal("TenBowl2","LOCALS",1)
+END
+
+IF
+  InParty(Myself)
+  Global("TenBowl3","LOCALS",0)
+  CheckStatGT(Myself,14,LEVEL)
+  PartyHasItem("B2#Bowl2")
+THEN
+  RESPONSE #100
+    TransformItem("B2#Bowl2","B2#Bowl3")
+    SetGlobal("TenBowl3","LOCALS",1)
+END
+
+IF
+    InParty(Myself)
+    Global("B2#Tenya","LOCALS",0)
+THEN
+    RESPONSE #100
+      SetGlobal("B2#Tenya","LOCALS",1)
+      RealSetGlobalTimer("B2#TenyaTalks","GLOBAL",3600)
+END
+
+IF
+    InParty(Myself)
+    RealGlobalTimerExpired("B2#TenyaTalks","GLOBAL")
+    PartyRested()
+    See(Player1)
+    !StateCheck(Player1,STATE_SLEEPING)
+    !AreaType(DUNGEON)
+    CombatCounter(0)
+    !See([ENEMY])
+    OR(4)
+      Global("B2#Tenya","LOCALS",1)
+      Global("B2#Tenya","LOCALS",3)
+      Global("B2#Tenya","LOCALS",5)
+      Global("B2#Tenya","LOCALS",7)
+THEN
+    RESPONSE #100
+      RealSetGlobalTimer("B2#TenyaTalks","GLOBAL",30)
+END
+
+IF
+    InParty(Myself)
+    RealGlobalTimerExpired("B2#TenyaTalks","GLOBAL")
+    See(Player1)
+    !StateCheck(Player1,STATE_SLEEPING)
+    !AreaType(DUNGEON)
+    CombatCounter(0)
+    !See([ENEMY])
+    OR(4)
+      Global("B2#Tenya","LOCALS",1)
+      Global("B2#Tenya","LOCALS",3)
+      Global("B2#Tenya","LOCALS",5)
+      Global("B2#Tenya","LOCALS",7)
+THEN
+    RESPONSE #100
+      IncrementGlobal("B2#Tenya","LOCALS",1)
+      Interact(Player1)
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%0609")
+    Global("B2#TenTemp","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenTemp","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%0609")
+    Global("B2#JalantDead","GLOBAL",0)
+    Dead("Jalantha")
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#JalantDead","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    Global("B2#TenDoll","GLOBAL",0)
+    PartyHasItem("B2#TDoll")
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenDoll","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    Global("B2#TenDrunk","GLOBAL",0)
+    CheckStatGT(Myself,50,INTOXICATION)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenDrunk","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%0800")
+    Global("B2#TenyaCity","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaCity","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%2000")
+    Global("B2#TenyaIsle","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaIsle","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%5401")
+    Global("chapter","GLOBAL",2)
+    Global("B2#TenyaMines","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaMines","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%1900")
+    Global("chapter","GLOBAL",3)
+    Global("B2#TenyaBandits","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaBandits","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%2100")
+    Global("B2#TenyaCloakW","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaCloakW","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%0112")
+    Global("B2#TenyaCellar","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaCellar","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%2626")
+    Global("chapter","GLOBAL",6)
+    Global("B2#TenyaCandle","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaCandle","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%2615")
+    Global("B2#TenyaCataComb","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaCataComb","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+    InParty(Myself)
+    AreaCheck("%AR%0123")
+    Global("B2#TenyaUndercity","GLOBAL",0)
+    !StateCheck([PC],STATE_SLEEPING)
+    CombatCounter(0)
+    !See([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("B2#TenyaUndercity","GLOBAL",1)
+    StartDialogueNoSet([PC])
+END

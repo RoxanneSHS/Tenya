@@ -1,0 +1,19 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("tenya")
+    setGlobal("B2#TenQuest","GLOBAL",10)
+    ReallyForceSpell(Player1,CLERIC_DISPEL_MAGIC)
+    Wait(1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#LETHE")
+    EquipMostDamagingMelee()
+    Enemy()
+END

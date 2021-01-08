@@ -1,0 +1,27 @@
+REPLACE_STATE_TRIGGER SHOAL 0
+~Global("ShoalHit","GLOBAL",0)
+ReactionGT(LastTalkedToBy,HOSTILE_UPPER)~
+
+APPEND SHOAL
+
+IF WEIGHT #-10
+~Name("Tenya",LastTalkedToBy)
+Global("ShoalHit","GLOBAL",0)
+~ THEN BEGIN B2#ShoalTen0
+  SAY @0
+  IF ~~ THEN EXTERN ~B2#TENYJ~ B2#ShoalTen1
+END
+
+IF ~~ THEN BEGIN B2#HoWTen5
+  SAY @1
+  IF ~~ THEN EXIT
+END
+END
+
+APPEND B2#TENYJ
+
+IF ~~ THEN BEGIN B2#ShoalTen1
+  SAY @2
+  IF ~~ THEN EXTERN ~SHOAL~ B2#HoWTen5
+END
+END

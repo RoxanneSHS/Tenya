@@ -1,0 +1,233 @@
+// --------------------------------------------
+// Basics
+BACKUP ~TenyaThermidor/backup~
+AUTHOR ~Coutelier (mail@coutelier.org.uk)~
+
+// --------------------------------------------
+// BG Tenya Thermidor v2.0
+// --------------------------------------------
+
+// Language
+AUTO_TRA ~TenyaThermidor/tra/%s~
+
+ALWAYS
+	OUTER_TEXT_SPRINT "AR" "AR"
+	ACTION_IF ( GAME_IS ~eet~ ) BEGIN
+		OUTER_TEXT_SPRINT "AR" "BG"
+		OUTER_SPRINT ~jrnj~ ~2~
+		OUTER_SPRINT ~jrnj0~ ~20~
+		OUTER_SPRINT ~jrnj00~ ~200~
+	END
+END
+
+LANGUAGE 
+         ~English~
+         ~english~
+         ~TenyaThermidor/tra/english/TTsetup.tra~
+LANGUAGE 
+         ~Russian~
+         ~russian~
+         ~TenyaThermidor/tra/russian/TTsetup.tra~
+
+// Component setup
+BEGIN ~Tenya Thermidor for BG:EE and EET~
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ ~Version for BGEE or EET only~
+
+//Spells
+ADD_SPELL "TenyaThermidor/Spells/B2#TNSTM.spl" 4 0 B2#TNSTM
+
+// Compiling dialogue...
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/Tenya.d~ USING  ~TenyaThermidor/tra/%s/Tenya.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#TenyJ.d~ USING   ~TenyaThermidor/tra/%s/B2#TenyJ.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#TenyP.d~ USING   ~TenyaThermidor/tra/%s/B2#TenyP.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#TenyB.d~ USING   ~TenyaThermidor/tra/%s/B2#TenyB.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#NAIDA.d~ USING   ~TenyaThermidor/tra/%s/B2#NAIDA.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#LETHE.d~ USING   ~TenyaThermidor/tra/%s/B2#LETHE.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#Ran2.d~ USING   ~TenyaThermidor/tra/%s/B2#Ran2.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/Angelo.d~  USING   ~TenyaThermidor/tra/%s/Angelo.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/BELAND.d~ USING   ~TenyaThermidor/tra/%s/BELAND.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/FARTHI.d~  USING   ~TenyaThermidor/tra/%s/FARTHI.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/SHOAL.d~  USING   ~TenyaThermidor/tra/%s/SHOAL.tra~
+COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/Player.d~ USING   ~TenyaThermidor/tra/%s/Player.tra~
+
+COMPILE EVALUATE_BUFFER ~TenyaThermidor/Dialogue/PUMBERL.d~
+
+// Area scripts
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~%AR%0901.bcs~ BEGIN
+	COPY ~TenyaThermidor/Scripts/AR0901.baf~ ~override/%AR%0901.bcs~ COMPILE_BAF_TO_BCS
+END ELSE BEGIN
+	EXTEND_TOP ~%AR%0901.bcs~ ~TenyaThermidor/Scripts/AR0901.baf~ EVALUATE_BUFFER
+END
+
+EXTEND_TOP ~%AR%4500.bcs~ ~TenyaThermidor/Scripts/AR4500.baf~     EVALUATE_BUFFER
+EXTEND_TOP ~%AR%1200.bcs~ ~TenyaThermidor/Scripts/AR1200.baf~     EVALUATE_BUFFER
+EXTEND_TOP ~%AR%0600.bcs~ ~TenyaThermidor/Scripts/AR0600.baf~     EVALUATE_BUFFER
+
+// Scripts
+EXTEND_TOP ~INITNEB.bcs~ ~TenyaThermidor/Scripts/INITNEB.baf~     EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#Tenya.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#Elem.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#ElemC.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#LETHE.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#LETHC.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#ElemL.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#ElemT.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL01.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL02.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL03.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL04.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL05.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL06.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL07.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL08.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL09.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTL10.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#Naida.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTS01.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTS02.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTS03.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTS04.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTS05.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTS06.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#cTN01.baf~ EVALUATE_BUFFER
+COMPILE ~TenyaThermidor/Scripts/B2#Ran2.baf~  EVALUATE_BUFFER
+
+// Copying files
+COPY ~TenyaThermidor/Sounds~ ~override~
+COPY ~TenyaThermidor/Portraits~ ~override~
+COPY ~TenyaThermidor/Effects~ ~override~
+
+// Items
+COPY ~TenyaThermidor/Items/B2#Bowl.itm~ ~override~
+  SAY DESC @0
+
+COPY ~TenyaThermidor/Items/B2#BowlG.itm~ ~override~
+
+COPY ~TenyaThermidor/Items/B2#Bowl1.itm~ ~override~
+  SAY DESC @1
+
+COPY ~TenyaThermidor/Items/B2#Bowl2.itm~ ~override~
+  SAY DESC @2
+
+COPY ~TenyaThermidor/Items/B2#Bowl3.itm~ ~override~
+  SAY DESC @3
+
+COPY ~TenyaThermidor/Items/B2#TNRNG.itm~ ~override~
+  SAY NAME1 @4
+  SAY NAME2 @4
+  SAY DESC @5
+
+COPY ~TenyaThermidor/Items/B2#ELATK.itm~ ~override~
+COPY ~TenyaThermidor/Items/B2#ELRNG.itm~ ~override~
+COPY ~TenyaThermidor/Items/B2#ELCHN.itm~ ~override~
+COPY ~TenyaThermidor/Items/B2#ELHLM.itm~ ~override~
+COPY ~TenyaThermidor/Items/B2#ELSD1.itm~ ~override~
+COPY ~TenyaThermidor/Items/B2#ELSD2.itm~ ~override~
+
+COPY ~TenyaThermidor/Items/B2#TDOLL.itm~ ~override~
+  SAY NAME1 @6
+  SAY NAME2 @6
+  SAY DESC @7
+
+COPY ~TenyaThermidor/Items/B2#LERNG.itm~ ~override~
+
+COPY ~TenyaThermidor/Items/B2#TNHLB.itm~ ~override~
+  SAY NAME1 @8
+  SAY NAME2 @8
+  SAY DESC @9
+
+// Creatures
+COPY ~TenyaThermidor/Creatures/TENYA.cre~ ~override/TENYA.cre~
+  SAY LEADER @10
+  SAY TIRED @11
+  SAY BORED @12
+  SAY BATTLE_CRY2 @13
+  SAY BATTLE_CRY3 @14
+  SAY HURT @15
+  SAY AREA_FOREST @16 
+  SAY AREA_CITY @17 
+  SAY AREA_DUNGEON @18 
+  SAY AREA_DAY @19
+  SAY AREA_NIGHT @20
+  SAY SELECT_COMMON2 @21 
+  SAY SELECT_COMMON3 @22 
+  SAY SELECT_COMMON4 @23
+  SAY SELECT_COMMON5 @24
+  SAY SELECT_COMMON6 @25
+  SAY SELECT_ACTION1 @26
+  SAY SELECT_ACTION2 @27 
+  SAY SELECT_ACTION3 @28
+  SAY SELECT_ACTION4 @29
+  SAY SELECT_ACTION5 @30 
+  SAY SELECT_ACTION6 @31
+  SAY SELECT_ACTION7 @32
+  SAY SELECT_RARE1 @33
+  SAY SELECT_RARE2 @34
+  SAY CRITICAL_HIT @35
+  SAY CRITICAL_MISS @36
+  SAY TARGET_IMMUNE @37
+  SAY INVENTORY_FULL @38
+  SAY BIO @39
+
+COPY ~TenyaThermidor/Creatures/B2#Elem1.cre~ ~override/B2#Elem1.cre~
+  SAY NAME1 @40
+  SAY NAME2 @40
+
+COPY ~TenyaThermidor/Creatures/B2#Elem2.cre~ ~override/B2#Elem2.cre~
+  SAY NAME1 @41
+  SAY NAME2 @41
+
+COPY ~TenyaThermidor/Creatures/B2#Elem3.cre~ ~override/B2#Elem3.cre~
+  SAY NAME1 @42
+  SAY NAME2 @42
+
+COPY ~TenyaThermidor/Creatures/B2#NAIDA.cre~ ~override/B2#NAIDA.cre~
+  SAY NAME1 @43
+  SAY NAME2 @43
+
+COPY ~TenyaThermidor/Creatures/B2#KELDA.cre~ ~override/B2#KELDA.cre~
+  SAY NAME1 @44
+  SAY NAME2 @44
+
+COPY ~TenyaThermidor/Creatures/B2#RAN.cre~ ~override/B2#RAN.cre~
+  SAY NAME1 @45
+  SAY NAME2 @45
+
+COPY ~TenyaThermidor/Creatures/B2#LETHE.cre~ ~override/B2#LETHE.cre~
+  SAY NAME1 @46
+  SAY NAME2 @46
+
+COPY ~TenyaThermidor/Creatures/B2#ElemL.cre~ ~override/B2#ElemL.cre~
+  SAY NAME1 @41
+  SAY NAME2 @41
+
+COPY ~TenyaThermidor/Creatures/B2#ElemT.cre~ ~override/B2#ElemT.cre~
+  SAY NAME1 @41
+  SAY NAME2 @41
+
+COPY ~TenyaThermidor/Creatures/B2#RAN2.cre~ ~override/B2#RAN2.cre~
+  SAY NAME1 @45
+  SAY NAME2 @45
+
+// APPENDS
+
+APPEND ~PDIALOG.2DA~
+~Tenya B2#TenyP B2#TenyJ~
+UNLESS ~Tenya~
+
+APPEND ~INTERDIA.2DA~
+~Tenya B2#TenyB~
+UNLESS ~Tenya~
+
+ACTION_IF GAME_IS ~eet~ BEGIN
+	INCLUDE ~EET/other/EET_functions.tph~
+	LAF ~EET_NPC_TRANSITION~
+		INT_VAR
+			type = 1
+		STR_VAR
+			dv = "Tenya"
+			override_BG1 = "B2#TENYA"
+			traFile = EVAL "TenyaThermidor/tra/%LANGUAGE%/TTsetup.tra"
+			string = "@5000002"
+	END
+END

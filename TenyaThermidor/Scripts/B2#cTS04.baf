@@ -1,0 +1,20 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#Ran")
+    setGlobal("B2#TenScrap","GLOBAL",6)
+    RunAwayFrom("tenya",30)
+    SmallWait(6)
+    ActionOverride("tenya",MoveToObject("B2#Ran"))
+    Wait(2)
+    FaceObject("tenya")
+    SetSequence(SEQ_ATTACK_JAB)
+    SmallWait(6)
+    ActionOverride("tenya",SetSequence(SEQ_ATTACK_SLASH))
+    SmallWait(6)
+    ActionOverride("tenya",ApplyDamage("B2#Ran",1,CRUSHING))
+    PlayDead(30)
+    Wait(3)
+    StartDialogueNoSet([PC])
+END

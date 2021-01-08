@@ -1,0 +1,160 @@
+BEGIN ~B2#Ran2~
+
+IF ~Global("B2#RanTalks","LOCALS",1)
+GlobalLT("B2#TenRan2","GLOBAL",2)
+~ THEN BEGIN B2#TR20
+  SAY @0
+  IF ~~ THEN EXTERN ~B2#TENYJ~ B2#TR21
+END
+
+APPEND B2#TenyJ
+IF ~~ THEN BEGIN B2#TR21
+  SAY @1
+  IF ~~ THEN EXTERN ~B2#Ran2~ B2#TR22
+END
+END
+
+APPEND B2#Ran2
+IF ~~ THEN BEGIN B2#TR22
+  SAY @2
+   = @3
+  IF ~~ THEN EXTERN ~B2#TenyJ~ B2#TR23
+END
+END
+
+APPEND B2#TenyJ
+IF ~~ THEN BEGIN B2#TR23
+  SAY @4
+  IF ~~ THEN EXTERN ~B2#Ran2~ B2#TR24
+END
+END
+
+APPEND B2#Ran2
+IF ~~ THEN BEGIN B2#TR24
+  SAY @5
+   = @6
+   = @7
+  IF ~~ THEN EXTERN ~B2#TenyJ~ B2#TR25
+END
+END
+
+APPEND B2#TenyJ
+IF ~~ THEN BEGIN B2#TR25
+  SAY @8
+  IF ~~ THEN EXTERN ~B2#Ran2~ B2#TR26
+END
+END
+
+APPEND B2#Ran2
+IF ~~ THEN BEGIN B2#TR26
+  SAY @9
+  IF ~~ THEN EXTERN ~B2#TenyJ~ B2#TR27
+END
+END
+
+APPEND B2#TenyJ
+IF ~~ THEN BEGIN B2#TR27
+  SAY @10
+  IF ~~ THEN EXTERN ~B2#Ran2~ B2#TR28
+END
+END
+
+APPEND B2#Ran2
+IF ~~ THEN BEGIN B2#TR28
+  SAY @11
+  IF ~~ THEN EXTERN ~B2#TenyJ~ B2#TR29
+END
+END
+
+APPEND B2#TenyJ
+IF ~~ THEN BEGIN B2#TR29
+  SAY @12
+  IF ~~ THEN REPLY @13 GOTO B2#TR210
+END
+
+IF ~~ THEN BEGIN B2#TR210
+  SAY @14
+   = @15
+  IF ~~ THEN DO ~SetGlobal("B2#TenRan2","GLOBAL",2)
+SetGlobalTimer("B2#TenRan2T","GLOBAL",ONE_DAY)
+ActionOverride("B2#Ran2",SetGlobal("B2#RanTalks","LOCALS",2))
+ActionOverride("B2#Ran2",EscapeArea())
+~ EXIT
+END
+END
+
+APPEND B2#Ran2
+IF ~Global("B2#TenRan2","GLOBAL",3)
+Global("BOYBODY","GLOBAL",0)
+~ THEN BEGIN B2#TR211
+  SAY @16
+  IF ~~ THEN DO ~SetGlobal("BOYBODY","GLOBAL",1)
+GiveItemCreate("MISC54",LastTalkedToBy,1,0,0)
+~ EXIT
+END
+
+IF ~Global("B2#TenRan2","GLOBAL",3)
+~ THEN BEGIN B2#TR212
+  SAY @17
+  IF ~~ THEN DO ~~ EXIT
+END
+END
+
+ALTER_TRANS TREMAI
+BEGIN 11 END
+BEGIN 0 END
+BEGIN
+"ACTION"
+~SetGlobal("B2#TenRan2","GLOBAL",6)
+TakePartyItem("MISC54")
+DestroyItem("MISC54")
+MoveToPoint([420.320])
+SetGlobal("TremainMove","GLOBAL",1)~
+"REPLY"
+~Of course.~
+"EPILOGUE"
+~EXIT~
+END
+
+EXTEND_BOTTOM TREMAI 11
+  IF ~Global("B2#TenRan2","GLOBAL",3)~ THEN REPLY @18 GOTO B2#TR213
+END
+
+APPEND TREMAI
+IF ~~ THEN BEGIN B2#TR213
+  SAY @19
+  IF ~~ THEN DO ~SetGlobal("B2#TenRan2","GLOBAL",4)
+TakePartyItem("MISC54")
+DestroyItem("MISC54")
+MoveToPoint([420.320])
+SetGlobal("TremainMove","GLOBAL",1)
+~ EXIT
+END
+END
+
+APPEND B2#Ran2
+IF ~IsValidForPartyDialogue("Tenya")
+Global("B2#TenRan2","GLOBAL",4)
+~ THEN BEGIN B2#TR214
+  SAY @20
+  IF ~~ THEN EXTERN ~B2#TenyJ~ B2#TR215
+END
+END
+
+APPEND B2#TenyJ
+IF ~~ THEN BEGIN B2#TR215
+  SAY @21
+   = @22
+  IF ~~ THEN EXTERN ~B2#Ran2~ B2#TR216
+END
+END
+
+APPEND B2#Ran2
+IF ~~ THEN BEGIN B2#TR216
+  SAY @23
+  IF ~~ THEN DO ~SetGlobal("B2#TenRan2","GLOBAL",5)
+AddexperienceParty(1400)
+EscapeArea()
+~ EXIT
+END
+END

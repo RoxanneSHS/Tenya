@@ -1,0 +1,12 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#LETHE")
+    setGlobal("B2#TenQuest","GLOBAL",7)
+    ActionOverride("tenya",ApplySpell(Myself,RESTORE_FULL_HEALTH))
+    ForceSpell("tenya",MEPHIT_ICE_SHARD)
+    Wait(3)
+    StartDialogueNoSet([PC])
+END
+

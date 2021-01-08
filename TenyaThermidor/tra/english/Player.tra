@@ -1,0 +1,273 @@
+@0    = ~Hmmm?~
+
+@1    = ~Would you like to play a game?~
+
+@2    = ~You're doing good out there. Have a pat on the head.~
+
+@3    = ~I've just gotta pinch those cheeks...~
+
+@4    = ~Would you like a sweet or something?~
+
+@5    = ~What do you think we should do now?~
+
+@6    = ~How are you doing?~
+
+@7    = ~Are you getting along with everyone?~
+
+@8    = ~I've got to ask you, Ten... about the fishermen...~
+
+@9    = ~So, what was that about outside the temple?~
+
+@10   = ~About what happened at the bridge... How are you feeling?~
+
+@11   = ~It's nothing. Let's go.~
+
+@12   = ~Why don't you make fun of some elves and then we'll see how many arrows you can dodge?~
+
+@13   = ~Come on. Let's go.~
+
+@14   = ~Certainly. Why don't you go hide and I will come look for you later... maybe.~
+
+@15   = ~Let's see how many of those dice can fit down your throat...~
+
+@16   = ~Why don't I be the princess, and you can all be my whipped dogs... I mean, subjects.~
+
+@17   = ~I should just kill you now...~
+
+@18   = ~You come near and I will slice off those fingers and throw them out to sea for the fish! They'll be fish fingers...~
+@19   = ~Pfeh. I have no need for such childish things.~
+
+@20   = ~But, I suppose I could accept it as an offering for Umberlee...~
+
+@21   = ~I suppose you do not expect the Sea Queen to be concerned about an iron crisis on land. But mother understands this shortage may affect the offerings that can be made to her... and cause more desperate and foolish people to do more foolish things.~
+
+@22   = ~We should see if we can put a stop to it before that happens.~
+
+@23   = ~We should find the bandits and kick them in the head until they're all dead.~
+
+@24   = ~And then make a new coral reef from all their bones.~
+
+@25   = ~Cloakwood... it's infested with giant spiders and wyverns and druids. I have tried petitioning Umberlee to flood the place, but she has not answered. I suppose we'll have to deal with it ourselves.~
+
+@26   = ~Do you think there's an actual big, scary Iron Throne with spikes and maybe a thing that comes down and splits your head in two?~
+
+@27   = ~In any case, they are behind everything. Mother would not normally be concerned with such petty matters, but I... I would like to help. And see the throne, if there is one.~
+
+@28   = ~I know little about Candlekeep. Knowledge for it's own sake is worthless, my earth-mother used to say...~
+
+@29   = ~But I don't know... anyway, why are you asking me? I'm just a child.~
+
+@30   = ~Well, the son of the late lord of murder, your brother, killed your foster father and is about to start a war that will devastate the entire region in the hope that he will ascend to godhood...~
+@31   = ~I think you should probably get to dealing that.~
+
+@32   = ~Is there anything else?~
+
+@33   = ~Aside from the usual dysphoria I feel due to never having been truly loved, I'm completely fine.~
+
+@34   = ~Dysphoria?~
+
+@35   = ~Okay then. Let's go.~
+
+@36   = ~It means unhappy. I read it. I read lots now that mother isn't here to burn all the books.~
+
+@37   = ~Tis but a few scratches. I've had worse.~
+
+@38   = ~This? This is nothing... just stings a bit...~
+
+@39   = ~That's my girl. Hang in there.~
+
+@40   = ~We'll get you healed soon. Let's go.~
+
+@41   = ~Was there something else?~
+
+@42   = ~Let's go.~
+
+@43   = ~Well I haven't killed anyone yet.~
+
+@44   = ~What do you think of Alora?~
+
+@45   = ~What do you think of Ajantis?~
+
+@46   = ~What do you think of Branwen?~
+
+@47   = ~What do you think of Coran?~
+
+@48   = ~What do you think of Dorn?~
+
+@49   = ~What do you think of Dynaheir?~
+
+@50   = ~What do you think of Edwin?~
+
+@51   = ~What do you think of Eldoth?~
+
+@52   = ~What do you think of Faldorn?~
+
+@53   = ~What do you think of Garrick?~
+
+@54   = ~What do you think of Imoen?~
+
+@55   = ~What do you think of Jaheira?~
+
+@56   = ~What do you think of Kagain?~
+
+@57   = ~What do you think of Khalid?~
+
+@58   = ~What do you think of Kivan?~
+
+@59   = ~What do you think of Minsc?~
+
+@60   = ~What do you think of Montaron?~
+
+@61   = ~What do you think of Neera?~
+
+@62   = ~What do you think of Quayle?~
+
+@63   = ~What do you think of Rasaad?~
+
+@64   = ~What do you think of Safana?~
+
+@65   = ~What do you think of Shar-Teel?~
+
+@66   = ~What do you think of Skie?~
+
+@67   = ~What do you think of Tiax?~
+
+@68   = ~What do you think of Viconia?~
+
+@69   = ~What do you think of Xan?~
+
+@70   = ~What do you think of Xzar?~
+
+@71   = ~What do you think of Yeslick?~
+
+@72   = ~Okay then. Let me ask something else.~
+
+@73   = ~Alright then. Let's get going.~
+
+@74   = ~She keeps trying to make me happy. It's making me mad.~
+
+@75   = ~His armor is well polished, I suppose.~
+
+@76   = ~She's tough. Almost as tough as me.~
+
+@77   = ~I think you should gut him.~
+
+@78   = ~Huh? Oh... sorry, I feel like my intelligence is being drained every time I think about him.~
+
+@79   = ~You were right... it sounds stupid to talk like that.~
+
+@80   = ~Teddy Eddy? What about him?~
+
+@81   = ~I think he's half hagfish. He actually sweats slime.~
+
+@82   = ~I think she wants to start a fight with me... but she's not worth my time.~
+
+@83   = ~He's... over there, I think...~
+
+@84   = ~Her stupid rodent-faced grinning really irritates me...~
+
+@85   = ~I think I could take her.~
+
+@86   = ~He drinks, he fights, loves gold, and has a beard. So, a dwarf.~
+
+@87   = ~I wonder if he had trouble speaking before he got married...~
+
+@88   = ~Does not say much, does he? I like that.~
+
+@89   = ~If we're allowed to have pets, then can I get a cat?~
+
+@90   = ~I think he needs a bath. Preferably at the bottom of the ocean.~
+
+@91   = ~Any chance she'll spontaneously combust? That'll be fun to watch.~
+
+@92   = ~Eccentric tinkerer with delusions of grandeur... so, a gnome.~
+
+@93   = ~I can punch harder than him.~
+
+@94   = ~I think she wore the wrong clothes for adventuring. What is wrong with her?~
+
+@95   = ~MEN BAD! ME SMASH BAD MEN! SMASH THEM TO GOO!~
+
+@96   = ~I think she has the roundest head of anyone I've seen... I wonder if it will bounce?~
+
+@97   = ~I think ruling everything would be less fun than it first sounds... lot of sitting around in meetings and signing bits of paper.~
+
+@98   = ~She reminds me of my earth-mother. That is not a good thing.~
+
+@99   = ~I wish he'd stop stating the obvious all the time.~
+@100  = ~He smells of wee. And pooh. And I think... chamomile?~
+
+@101  = ~Even though he was a slave for a long time down there, he still doesn't smell as bad as other dwarves I've met.~
+
+@102  = ~Anything else?~
+
+@103  = ~What is it?~
+
+@104  = ~No, nothing. Let's go.~
+
+@105  = ~The murderers, you mean. What of them?~
+
+@106  = ~They said two of their number had been washed away in a storm...~
+
+@107  = ~What would you have done if I hadn't helped?~
+
+@108  = ~I was not aware of that. But you think I'm responsible?~
+
+@109  = ~Contrary to what those superstitious idiots believed, I can not control the weather myself. I did pray to the sea-mother for her help punishing them, so maybe she answered.~
+
+@110  = ~I feel no sorrow for them, if that is what you are hoping for. Those men forced their way into my home, murdered my parent, and left me alone to clean up all the mess because they had not the courage to finish what they started.~
+
+@111  = ~The fools should have known better than to go near the water after what they did. They deserved far worse than what they were given.~
+
+@112  = ~I'm sorry, Ten...~
+
+@113  = ~I don't know. I had hoped it would be enough to scare them into returning what they stole... but they were proving more stubborn than I'd anticipated...~
+
+@114  = ~It's... not as if you put them up to any of it, is it?~
+
+@115  = ~Now, was there anything else?~
+
+@116  = ~Nothing. Let's go.~
+
+@117  = ~It was nothing. Umberlants always have to prove how strong they are. Although, I wouldn't be surprised if Jalantha Mistmyr wasn't encouraging those girls as well... she never did like mother or I, and she's likely jealous of the favor Umberlee has shown me.~
+
+@118  = ~But I'm not interested in her position. I think now that I can serve Umberlee just as well out in the world as cooped up at home or in a temple. Better, even.~
+
+@119  = ~It was surprisingly kind of you to let that girl go.~
+
+@120  = ~Was it? I don't know... that girl, Ran, seems too soft to survive here, especially if she's relying on those other two pathetic idiots to protect her. It might have been if she was sent some place else...~
+
+@121  = ~Beh... not that I care at all anyway. Let them all fight each other until the only things left alive in there are the turtles. None of it is my conern.~
+
+@122  = ~Are you satisfied, or do you have more annoying questions?~
+@123  = ~The same. I killed the woman who caused my mothers death, but nothing is any different. I thought it would be, but it's not.~
+
+@124  = ~Mother made everyone so afraid all the time... I suppose it was inevitable that someone would kill her, one day, because that is what people do when they're scared of a person. It might even have been me...~
+
+@125  = ~You don't have to be like her, you know.~
+
+@126  = ~Not if you kill them first.~
+
+@127  = ~I'm not. I've tried... all my life I've tried, but even I get tired of being angry all the time. I want to feel other things as well.~
+
+@128  = ~I'm sure you will. Just have a little patience, okay?~
+
+@129  = ~You can not kill everyone. Well, I suppose you could, but then wouldn't the world be boring if you were the only person you could ever talk to?~
+
+@130  = ~You don't need to answer that... I *know*.~
+
+@131  = ~I suppose I was wrong. Some things are different now. Life is definitely more interesting, since I met you.~
+
+@132  = ~But that's enough mush. Did you want anything else?~
+
+@133  = ~Let's get going.~
+
+@134  = ~Yes. Let's.~
+@135  = ~Do you have any other family, Tenya?~
+@136  = ~Neb didn't hurt you, did he?~
+@137  = ~Not really. An aunt, I suppose... she is also a priestess of Umberlee and has never cared much at all for me or my earth-mother.~
+@138  = ~What about your father?~
+@139  = ~A coward who ran was all mother would say of him. But it was before I was old enough to remember anything, so I don't know. Nor do I care to.~
+@140  = ~Hmph. Should be more worried about him. If I see that grimy gnome again, I will slice him into tiny maggot sized chunks and sell them as bait.~
+@141  = ~Heh... that's my girl.~
+@142  = ~Yes, well...~

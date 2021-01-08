@@ -1,0 +1,10 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("tenya")
+    setGlobal("B2#TenScrap","GLOBAL",7)
+    ActionOverride("B2#Ran",EscapeArea())
+    Wait(4)
+    StartDialogueNoSet([PC])
+END

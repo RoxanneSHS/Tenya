@@ -1,0 +1,36 @@
+IF
+Global("B2#TenyaJoined","Global",2)
+InParty("tenya")
+Global("B2#NaidExists","%AR%1200",0)
+THEN
+RESPONSE #100
+SetGlobal("B2#TenScrap","GLOBAL",1)
+SetGlobal("B2#NaidExists","%AR%1200",1)
+CreateCreature("B2#Naida",[1120.2675],SW)
+CreateCreature("B2#Kelda",[1070.2630],SW)
+CreateCreature("B2#Ran",[1190.2690],SW)
+END
+
+IF
+Global("B2#TenyaJoined","Global",0)
+Global("B2#NaidExists","%AR%1200",0)
+THEN
+RESPONSE #100
+SetGlobal("B2#TenScrap","GLOBAL",2)
+SetGlobal("B2#NaidExists","%AR%1200",1)
+CreateCreature("B2#Naida",[1120.2675],SW)
+CreateCreature("B2#Kelda",[1070.2630],SW)
+CreateCreature("B2#Ran",[1190.2690],SW)
+CreateCreature("Tenya",[975.2710],NE)
+END
+
+IF
+Global("B2#TenRan2","GLOBAL",1)
+Global("BOYBODY","GLOBAL",0)
+Global("HelpTremain","GLOBAL",1)
+Global("B2#RanExists","%AR%1200",0)
+THEN
+RESPONSE #100
+SetGlobal("B2#RanExists","%AR%1200",1)
+CreateCreature("B2#Ran2",[1190.2690],NW)
+END

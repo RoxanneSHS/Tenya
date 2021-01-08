@@ -1,0 +1,19 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("tenya")
+    setGlobal("B2#TenQuest","GLOBAL",13)
+    TransformItem("B2#BowlG","B2#Bowl1")
+    CreateCreature("B2#ELEMT",[1370.1490],W)
+    Wait(2)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#LETHE")
+    DestroyItem("MINHP1")
+END

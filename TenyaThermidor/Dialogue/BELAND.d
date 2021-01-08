@@ -1,0 +1,45 @@
+APPEND BELAND
+
+IF WEIGHT #-10
+~InParty("Tenya")
+IsValidForPartyDialogue("Tenya")
+Global("BelandEntranceFee","GLOBAL",0)
+~ THEN BEGIN B2#HoWTen0
+  SAY @0
+   = @1
+  IF ~~ THEN REPLY @2 EXTERN ~B2#TENYJ~ B2#HoWTen1
+  IF ~~ THEN REPLY @3 EXTERN ~B2#TENYJ~ B2#HoWTen1
+END
+
+IF ~~ THEN BEGIN B2#HoWTen5
+  SAY @4
+  IF ~~ THEN DO ~SetGlobal("BelandEntranceFee","GLOBAL",1)
+~ EXIT
+END
+END
+
+APPEND B2#TENYJ
+
+IF ~~ THEN BEGIN B2#HoWTen1
+  SAY @5
+  IF ~Gender(Player1,MALE)~ THEN REPLY @6 GOTO B2#HoWTen2
+  IF ~Gender(Player1,MALE)~ THEN REPLY @7 GOTO B2#HoWTen2
+  IF ~Gender(Player1,FEMALE)~ THEN REPLY @6 GOTO B2#HoWTen3
+  IF ~Gender(Player1,FEMALE)~ THEN REPLY @7 GOTO B2#HoWTen3
+END
+
+IF ~~ THEN BEGIN B2#HoWTen2
+  SAY @8
+  IF ~~ THEN GOTO B2#HoWTen4
+END
+
+IF ~~ THEN BEGIN B2#HoWTen3
+  SAY @9
+  IF ~~ THEN GOTO B2#HoWTen4
+END
+
+IF ~~ THEN BEGIN B2#HoWTen4
+  SAY @10
+  IF ~~ THEN EXTERN ~BELAND~ B2#HoWTen5
+END
+END

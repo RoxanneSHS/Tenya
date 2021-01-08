@@ -1,0 +1,8 @@
+IF
+   Global("B2#SpawnDoll","%AR%0901",0)
+THEN
+   RESPONSE #100
+      SetGlobal("B2#SpawnDoll","%AR%0901",1)
+      ActionOverride("Container 1",CreateItem("B2#TDOLL",1,0,0))
+      Continue()
+END

@@ -1,0 +1,15 @@
+IF
+  Global("B2#TenScrap","GLOBAL",1)
+  Detect("tenya")
+THEN
+  RESPONSE #100
+     StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+  Global("B2#TenScrap","GLOBAL",2)
+  Detect([PC])
+THEN
+  RESPONSE #100
+     StartDialogueNoSet(LastSeenBy(Myself))
+END

@@ -1,0 +1,730 @@
+@0    = ~It certainly is good to be out and about. But are we to just wander aimlessly, or dost thou have a plan?~
+
+@1    = ~Don't talk like that.~
+
+@2    = ~Yes, I have a plan.~
+
+@3    = ~Just making it up as I go along.~
+
+@4    = ~Not really.~
+
+@5    = ~Like what?~
+
+@6    = ~That 'thee' and 'thou' nonsense. Stop it.~
+
+@7    = ~Why?~
+
+@8    = ~Because it's ridiculous.~
+
+@9    = ~Oh, very well. But thou hast not... has not, answered my question.~
+
+@10   = ~I hope it is a good one. Your enemies will all have plans as well.~
+
+@11   = ~Well, it's all worked out so far.~
+
+@12   = ~Don't be foolish. Your enemies are out there plotting as we speak. You can not just traipse about hoping Tymora will smile on you.~
+
+@13   = ~Don't worry. I'm really good at improvising.~
+
+@14   = ~An adventurer without a purpose is like a wizard without a hat, or so mother once said.~
+
+@15   = ~I'm sure we'll come across something soon.~
+
+@16   = ~Just don't grow overconfident. My mother was overconfident, and... she was gutted by fishermen.~
+
+@17   = ~Were you and she close?~
+
+@18   = ~She... used to tie bricks to my feet and make me run around the forest for hours...~
+
+@19   = ~Doesn't really answer my question...~
+
+@20   = ~It hardly matters now, does it? She's dead, and I'll never...~
+
+@21   = ~Enough! I am bored of this conversation now. You're boring.~
+
+@22   = ~Your... foster father was killed?~
+
+@23   = ~Yeah...~
+
+@24   = ~I don't want to talk about it.~
+
+@25   = ~Does it... still hurt?~
+
+@26   = ~It does.~
+
+@27   = ~No, I'm over it.~
+
+@28   = ~Does it ever stop?~
+
+@29   = ~I don't know.~
+
+@30   = ~Maybe after I've killed the the bastard that did it.~
+
+@31   = ~My earth-mother was... I was never able to please her. I tried to, but she always said I was too weak and pathetic, and then she would drink and throw bottles and say it was my fault that father left. The only thing she ever trusted me to take care of was this stupid bowl. I don't know why it hurts so much that she's gone...~
+
+@32   = ~I suppose... it never mattered what she was like. She was your mother, and you wanted her to care about you.~
+
+@33   = ~Well I've no idea. Sounds like she was a real bitch.~
+
+@34   = ~I got the bowl back for her and Umberlee. But she'll never thank me, will she? I'll still never...~
+
+@35   = ~She was MY mother! Mine! Do you understand, you algae-brained, slack-watered haddock?!~
+
+@36   = ~Bah! I don't know why I thought I could talk to you about this. What's the point anyway? There's nothing anyone can change about it now.~
+
+@37   = ~I still have Umberlee. I need for nothing else.~
+
+@38   = ~I actually understand you for once. Stupid thought of mine anyway. Forget it.~
+
+@39   = ~I think you are a liar.~
+
+@40   = ~Why did you bring me with you?~
+
+@41   = ~I just felt sorry for you.~
+
+@42   = ~A temple of Umberlee is no place for a child.~
+
+@43   = ~I thought a priestess of Umberlee might be useful on the coast.~
+
+@44   = ~Pity then, is it? I somehow expected better from you than that.~
+
+@45   = ~Nothing wrong with empathy, Tenya. It is a form of intelligence, and we all want someone else to care, sometimes.~
+
+@46   = ~You were concerned for my well being? I am touched. Truly. Although I can take care of myself, as I'm sure you must know by now.~
+
+@47   = ~Still... I must admit I was not relishing the thought of being under the thumb of Jalantha Mistmyr the rest of my life.~
+
+@48   = ~Of course. The people here all fear me. Well, they fear my mother anyway. Fear Umberlee. Most of them do...~
+
+@49   = ~But I am starting to think that's not always desirable. I've... seen that people who are afraid can be foolish and unpredictable.~
+
+@50   = ~If you say so.~
+
+@51   = ~So what is to happen to me now?~
+
+@52   = ~I don't know. Maybe we'll find somewhere for you. Some place or some one who will take you in.~
+
+@53   = ~Now? We just keep going.~
+
+@54   = ~So long as you're still useful, I see no reason to change anything.~
+
+@55   = ~So... you intend to abandon me as well? Like father did...~
+
+@56   = ~Tenya...~
+
+@57   = ~You... really are an imbecile! You think anyone wants an orphan with the power and fury of a goddess behind her? Not even my own mother wanted me.~
+
+@58   = ~Anyone else would be too afraid to even try. I... should have just killed you...~
+
+@59   = ~No! What I should have done was bound your hideous hide and thrown you in a tank of carnivorous sea snails!~
+
+@60   = ~Snails?~
+
+@61   = ~It would be very slow! And slimy. It's not too late, of course. Or maybe I will just slice bits of you off with sea shells and keep splashing salt over the wound and have crabs pinch you all over until... until I think of something even crueller!~
+
+@62   = ~Bah! It matters not. There is no place for me. You will see.~
+
+@63   = ~Oh. Well, in that case, all is fine. Maybe that way?~
+
+@64   = ~I am more than just useful, <CHARNAME>. I think you will find that I am prodigious. See? I only read that word a little earlier and I am already using it.~
+
+@65   = ~I have something to say.~
+
+@66   = ~What is it?~
+
+@67   = ~Can it wait? I'm busy.~
+
+@68   = ~Oh, I just thought you'd be interested in knowing that this bowl I carry is not just a dinner plate.~
+
+@69   = ~It has the ability to summon and control elemental creatures. It... could be useful. To me, and therefore to you...~
+
+@70   = ~I suppose you could be right...~
+
+@71   = ~You're right. That could be useful.~
+
+@72   = ~Are you trying to bargain with me, Tenya?~
+
+@73   = ~Of course I'm right. I'm always right.~
+
+@74   = ~I... no longer wish to return to the temple. And Umberlee does not seem to have any problem with me helping you, so...~
+
+@75   = ~There... is one small problem, however. Mother - my earth-mother - entrusted me with the bowls protection. It was the only thing she ever trusted me with. But, she never instructed me in its use.~
+
+@76   = ~So, in fact, it is useless?~
+
+@77   = ~But you know someone who can?~
+@78   = ~You think I would waste my own time mentioning this if that were the case? I know who can unlock it's power.~
+
+@79   = ~There is Jalantha Mistmyr, of course, but I would prefer it remain hidden from her. She has never cared much for me and mine and will likely just try to take the bowl for herself.~
+
+@80   = ~Mother also spoke of a witch named Lethe who once served Umberlee. Few Umberlants live long enough to be able to retire, but that's what she did. Supposedly, she became some sort of hermit, living in or around the Firewine ruins.~
+
+@81   = ~How do you know this witch is alive?~
+
+@82   = ~I do not. But I think it would be worth going and finding out for ourselves.~
+
+@83   = ~Alright, Tenya. We'll see.~
+
+@84   = ~That is all I ask.~
+
+@85   = ~I thought all you tin-plated placoderms were supposed to protect people.~
+
+@86   = ~That is one of my duties, yes.~
+
+@87   = ~So why don't you, then?~
+
+@88   = ~Whatever do you mean?~
+
+@89   = ~Too late... you always show up too late.~
+
+@90   = ~I am... sorry, for your mother. But she was...~
+
+@91   = ~She only did her duty! What do you think would happen to all those who rely on the sea for their livelihoods if Umberlee is not appeased?~
+
+@92   = ~Umberlee can demand too much.~
+
+@93   = ~The ocean may be vast, but it is not boundless. A balance must be kept.~
+
+@94   = ~I'm sorry.~
+
+@95   = ~Bah! This conversation is irritating me. You're irritating. Go away.~
+
+@96   = ~There is naught but good and evil!~
+
+@97   = ~So, do you think I am evil?~
+
+@98   = ~No. You are but a child. It not too late for you to change your ways.~
+
+@99   = ~And the men who murdered my mother? Were they evil?~
+
+@100  = ~They were... driven to desperation...~
+
+@101  = ~You think that justifies what they did?!~
+
+@102  = ~Of course not!~
+
+@103  = ~Hm. Well, perhaps this meting out justice business is trickier than you thought.~
+
+@104  = ~C'mon Tenya, smile! You're too young and too pretty to always frown like that.~
+
+@105  = ~My father left me, my mother was gutted before my eyes... so, as much as there is for me to smile about, I just don't feel like it.~
+
+@106  = ~I know you've had a rough time of it, but things can get better. Look at all the friends you have now!~
+
+@107  = ~Friends?~
+
+@108  = ~You never had a friend before?~
+
+@109  = ~I-I... that is, mother never allowed other children to visit...~
+
+@110  = ~Well we can change that! Tell you what, why don't we play a game?~
+
+@111  = ~Gah... fine. I spy with my little eye, something beginning with 'F'.~
+
+@112  = ~Ohh! Is it... fur?~
+
+@113  = ~Nope. 'Fist'. Specifically, my fist, heading toward your face.~
+
+@114  = ~Awww... you don't really want to hit me!~
+
+@115  = ~Hmmm... no, I really do...~
+
+@116  = ~Well, if it makes you feel better. We'll still be friends.~
+
+@117  = ~You are... oh, just leave me be.~
+
+@118  = ~Ohhh... I think you nearly smiled! C'mon Ten, just a little more effort!~
+
+@119  = ~Why won't you leave me alone?~
+
+@120  = ~Told you, we're friends!~
+
+@121  = ~I hate you. I hate your voice. I hate the grin etched permanently on your face like some kind of clown-fish. I hate pink...~
+
+@122  = ~*gasps* No girl hates pink!~
+
+@123  = ~I do.~
+
+@124  = ~Well, whatever you say, you will grow to like me.~
+
+@125  = ~I won't.~
+
+@126  = ~You will! Friendship is magic, Tenya. You'll see!~
+
+@127  = ~I will show you magic, you annoying little porpoise...~
+
+@128  = ~EEP!~
+
+@129  = ~Look what I've found!~
+
+@130  = ~Leena! How did you...!~
+
+@131  = ~I mean... I care not. It's just a doll.~
+
+@132  = ~Awww, no! Is that any way to speak about an old friend?~
+
+@133  = ~It... she's just a doll...~
+
+@134  = ~'Oh, Tenya, I'm lonely! Why don't you play with me no more?'~
+
+@135  = ~Leena... doesn't sound like that.~
+
+@136  = ~What does she sound like, then?~
+
+@137  = ~She does not have a voice. She's made of wood.~
+
+@138  = ~That doesn't mean she can't...~
+
+@139  = ~Stop! I admire your tenacity, truly. But a smile does not solve every problem, and a child's toy has not the power to change anything.~
+
+@140  = ~This... game, is not making me happy. All you are doing is reminding me of the things I've lost, and will never be able to regain.~
+
+@141  = ~So, I mean it this time, LEAVE-ME-ALONE!~
+
+@142  = ~All... all right, Tenya. I... I'm sorry. *sniff*~
+
+@143  = ~So... you're not annoying me. Are you sure you're well?~
+
+@144  = ~I'm fine, Tenya. It was nice of you to ask.~
+
+@145  = ~But you haven't tried to make me smile at all today.~
+
+@146  = ~No.~
+
+@147  = ~Or sang... well, squeaked, any stupid songs in my ear.~
+
+@148  = ~No, Tenya. You made it clear you do not want to be friends with me.~
+
+@149  = ~I didn't say I... hmph. I thought, maybe, you would want to play a game, or something.~
+
+@150  = ~No... I'm okay.~
+
+@151  = ~Oh, this is intolerable! You are not supposed to mope about feeling sorry for yourself! You're supposed to be all squeally and girly and irritating.~
+
+@152  = ~But you hate that.~
+
+@153  = ~I was growing to... well, not like. But I had gotten used to it.~
+
+@154  = ~*grins* Oh, I knew you were a nice person deep down! Alrighty then, let's play a game!~
+
+@155  = ~Okay, but... never hug me again, or I will kill you.~
+
+@156  = ~Your skills are impressive for one so young.~
+
+@157  = ~I've been trained all my life. Mother would not tolerate idleness.~
+
+@158  = ~It is a pity about your choice of goddess, although I suppose 'twas not truly a choice.~
+
+@159  = ~Umberlee took me in and gave me strength and power when I needed it. She is not incapable of being generous, on occassion.~
+
+@160  = ~Perhaps she can. Still, there are some areas in which you can improve.~
+
+@161  = ~Such as?~
+
+@162  = ~You do have skill, yet often you fight like a rabid animal. You must reign in your anger and learn to unleash it at the right moment. Come, I will show you.~
+
+@163  = ~Stay behind me, little one.~
+
+@164  = ~Pfft. I do not protection from some goofy pointy eared fish-face...~
+
+@165  = ~Heh. Congratulations, <CHARNAME>. A real charmer you are raising there.~
+
+@166  = ~Fathers who abandon their children should all be drowned in the sea!~
+
+@167  = ~Well, that's... t-that's a little bit harsh, don't you think?~
+
+@168  = ~And then their bodies ground into salt, and then the salt licked up by dogs who then pee, and then the bodies will be reconstituted and resurrected so it can all be done over and over again...~
+
+@169  = ~Thankfully it will be a long time before you're elected head of state.~
+
+@170  = ~Ha! You do amuse me, tiny one.~
+
+@171  = ~I'm glad one of us is entertained.~
+
+@172  = ~I am sorry for the cruelty this world has inflicted on thee.~
+
+@173  = ~I did not ask for your sympathy, witch.~
+
+@174  = ~No. But I offer it anyway.~
+
+@175  = ~Here, girl. There is no need to fight it.~
+
+@176  = ~I... I told you. I do not want...~
+
+@177  = ~Thou art a child, and hurt. There is no shame in being so. Come...~
+
+@178  = ~I-I... *sniff*~
+
+@179  = ~Shhh... it is all alright. You are among friends, here.~
+
+@180  = ~*sobs*~
+
+@181  = ~What are you doing, Edwin?~
+
+@182  = ~(Gah! The child speaks! How is it one is supposed to deal with them?) Er... yes, little person? Did you want anything?~
+
+@183  = ~You... do know everyone can hear you when talk like that?~
+
+@184  = ~(Perhaps offer her something?) Erm... perhaps you would like a sweet? I believe I have something sugary in here somewhere... (yes, this should placate and make her less nosy for a while).~
+
+@185  = ~Nope... but I'll take it anyway.~
+
+@186  = ~Hmmm... seek me out in a few years, my dear.~
+
+@187  = ~You are disgusting! Do not touch me with those slimy little fins of yours!~
+
+@188  = ~Honestly, you must be the only female here immune to my charms. But you may feel differently once you are a woman.~
+
+@189  = ~You are slimy! Look at you, you actually sweat slime like some kind of hagfish!~
+
+@190  = ~Even if by some miracle you live long enough to see me as a woman, it will be the last thing you see.~
+
+@191  = ~You are rather fierce... one day you may even present challenge for me.~
+
+@192  = ~Why don't you go chase a rabbit, or something?~
+
+@193  = ~*wolf-like grin* I'll wait... do not let the others make you soft in the mean-time, Tenya.~
+
+@194  = ~Hmph. I am not going to waste my time on you.~
+
+@195  = ~*yawns* I'm bored. What are you scribbling about over there?~
+
+@196  = ~Oh, I am just taking notes. In the future, people may wish to read about our adventures.~
+
+@197  = ~Why? Will they be very bored as well?~
+
+@198  = ~I think many will be intrigued by the story of a brave child, a girl, who sought justice and then became a hero.~
+
+@199  = ~I suppose that part is good...~
+
+@200  = ~Indeed! People will want to know about you. In fact, perhaps you will consent to allowing me to interview you some time?~
+
+@201  = ~Hmmm... maybe. We'll see.~
+
+@202  = ~So, what is your favorite color?~
+
+@203  = ~Blue, of course. The color of the ocean... watching the sea makes me feel calm. Will people really want to know about that?~
+
+@204  = ~Every detail is important. Your favorite food?~
+
+@205  = ~Used to be linguini, since that was all we ever had. Now, I like cookies. And cakes. And those round minty things we found that time...~
+
+@206  = ~Hmm... what was your favorite story growing up?~
+
+@207  = ~I... mother never told me stories.~
+
+@208  = ~Did you never read to yourself?~
+
+@209  = ~Some times... but if mother found out I was reading some foolish tale about talking animals instead of prayers to Umberlee, she would... it wasn't good.~
+
+@210  = ~But you did have a favorite?~
+
+@211  = ~Hm... the one where a little blonde girl is caught stealing and then is torn into bloody ribbons by three bears. That was good.~
+
+@212  = ~I'm not sure that's what happens...~
+
+@213  = ~It is in my version.~
+
+@214  = ~Look, I do not like you, and you do not like me. But I suppose we have to try to get along...~
+
+@215  = ~I like you.~
+
+@216  = ~Wh-what? Why?~
+
+@217  = ~You're kinda funny. And really, Ten, you're not as bad as you think. Yer just sad.~
+
+@218  = ~*flushed* Y-you... you are a clod-pated, numskulled, ninnyhammer! Stay away from me!~
+
+@219  = ~Come here, Ten! You need a hug!~
+
+@220  = ~GAH! Get... l-let go of me!~
+
+@221  = ~Oh, I can't! I've just gotta pinch those lovely little cheeks! Hee!~
+
+@222  = ~This... this is child abuse! I will so have you done for this...~
+
+@223  = ~Ohhh... and now you've gone all red! It's adorable!~
+
+@224  = ~Blech! You do not expect me to actually eat this thing, do you?~
+
+@225  = ~And what, exactly, is wrong with it?~
+
+@226  = ~For one thing, it just winked at me.~
+
+@227  = ~Stop being foolish.~
+
+@228  = ~Don't we have any biscuits?~
+
+@229  = ~Enough!~
+
+@230  = ~Shut up, sit down, and eat what you are given! Any more complaining and I swear, I will slap you so hard it shall be the last thing you feel for a month!~
+
+@231  = ~Y-yes... yes ma'am!~
+
+@232  = ~*sighs* Remind me never to have children.~
+
+@233  = ~Bah! This a mercenary band, or be ye babysitters now?~
+
+@234  = ~Aww... why? Have you made a mess in your armor again?~
+
+@235  = ~Watch yer tongue, brat, or it'll be cut out.~
+
+@236  = ~Go ahead and try it, dwarf. But you might find it difficult while drowning in your own fluid.~
+
+@237  = ~Hrrr...~
+
+@238  = ~Ha! Maybe the girl not be useless after all. Fine. Let her tag along.~
+
+@239  = ~I can't quite work you out...~
+
+@240  = ~Really? I-I don't think I'm that complicated.~
+
+@241  = ~You are a strong warrior, yet you stammer and stutter like a scared little girl.~
+
+@242  = ~I do? I h-had not noticed...~
+
+@243  = ~Is it a ploy to mislead your enemies? Make them think you're weak so they let their guard down, and then smack them when they don't expect it!~
+
+@244  = ~Um... y-yes. Let's... l-let's go with that.~
+
+@245  = ~...~
+
+@246  = ~....~
+
+@247  = ~...?~
+
+@248  = ~.....~
+
+@249  = ~You're weird.~
+
+@250  = ~Why do you have a hamster?~
+
+@251  = ~Boo is no ordinary hamster. Just as you are no ordinary child, I think. But I do not believe you have been introduced... say hello to the nice little girl, Boo!~
+
+@252  = ~Er... hello?~
+
+@253  = ~See how he stands in my palm? He likes you! He wants you to pet him.~
+
+@254  = ~Heh...~
+
+@255  = ~Er, I-I mean... I care not.~
+
+@256  = ~*yawns*~
+
+@257  = ~Little Tenya is looking sleepy.~
+
+@258  = ~I'm not sleepy! Sleep... *yawn* sleep is for sleepy people...~
+
+@259  = ~Perhaps Minsc should carry you?~
+
+@260  = ~I care not. But... I suppose, I could allow it so that you gain favor with Umberlee.~
+
+@261  = ~Boo will make room for you. Climb up...~
+
+@262  = ~... there! Let Boo know if you are uncomfortable...~
+
+@263  = ~*Zzzzzz...*~
+
+@264  = ~Heh.~
+
+@265  = ~Is Boo safe?~
+
+@266  = ~You need not worry for Boo, little Tenya. Like you, Boo may be small in stature, but he is great in power.~
+
+@267  = ~What kind of power does he have?~
+
+@268  = ~Great power! Enormous power! Mere words will not suffice to describe the hugeness of the power Boo has! Fortunate we are that he is tame and exercises restraint, or the realms would be in real trouble.~
+
+@269  = ~Is he stronger than an ogre?~
+
+@270  = ~Such creatures would flee in terror were Boo to unleash his true might upon them.~
+
+@271  = ~What about a Mindflayer?~
+
+@272  = ~Boo would feast on their brains, but they would prove little more than a snack to him.~
+
+@273  = ~A dragon?~
+
+@274  = ~He makes tiny boots from their hides... although that does at least leave them alive and in truth they hardly notice.~
+
+@275  = ~Keep your distance from me, rogue!~
+
+@276  = ~You oughta watch yer manners, girl.~
+
+@277  = ~You ought to take a bath.~
+
+@278  = ~Don't be counting too much on yer age t'keep yer safe out here. Lot of bad folk who would kill ye, or rape ye, or both, just as soon as they would look at ye.~
+
+@279  = ~Is that a threat?~
+
+@280  = ~A warning. But ye take it as ye will.~
+
+@281  = ~Well then, I shall give a warning to you - Umberlee does not forgive, or forget. I suggest you watch your manners.~
+
+@282  = ~Oh, I remember the games I used to play when I was your age.~
+
+@283  = ~I'd have liked to met you when you were my age.~
+
+@284  = ~Who knows... you might. I mean, stranger mishaps have happened.~
+
+@285  = ~Oh good. So does that mean I'll be able to kill you then, and spare myself listening to you now?~
+
+@286  = ~I wasn't talking about time travel, necessarily... but you know what, you're a little bit anti-social, aren't you?~
+
+@287  = ~I lived alone all my life with a mother who summoned monsters every day to attack me. So what do you think?~
+
+@288  = ~I thought my life was messed up, but... wow. And ouch.~
+
+@289  = ~We should really take you to the circus some time!~
+
+@290  = ~Please don't.~
+
+@291  = ~Oh, it will be fun! There'll be clowns!~
+
+@292  = ~There's a clown here.~
+
+@293  = ~And dancers, and lion-tamers, and shaved bears!~
+
+@294  = ~*groans*~
+
+@295  = ~It'll be the most entertaining experience you've had!~
+
+@296  = ~You know what I'd find entertaining? You choking on a sea-urchin, that's what.~
+
+@297  = ~Would you like to play a game, Rasaad?~
+
+@298  = ~A game?~
+
+@299  = ~You monks train your minds and bodies from a young age, I hear.~
+
+@300  = ~So, I was wondering, how long can your hold your breath?~
+
+@301  = ~A fair time, I assure you.~
+
+@302  = ~I could submerge you right now and time it.~
+
+@303  = ~This seems a rather dangerous game.~
+
+@304  = ~Oh yes. It's murder.~
+
+@305  = ~Well, I feel I must decline.~
+
+@306  = ~Pfft. Never any fun...~
+
+@307  = ~You too much time in the light will make you blind. Probably give you sunburn, too.~
+
+@308  = ~One must contemplate the light. It is, after all, what gives life to everything in our world.~
+
+@309  = ~All life came from the sea. Our bodies are mostly water. Yet even I know I can still drown.~
+
+@310  = ~You do raise an interesting point. Are you saying that too much time in the light can blind us, in a metaphorical sense, to the real darkness that exists in the world around us leaving us unprepared for it when it comes?~
+
+@311  = ~Um... I guess? Maybe...~
+
+@312  = ~I shall contemplate this.~
+
+@313  = ~You know, I think you're going to turn out to be quite the little heart-breaker.~
+
+@314  = ~I could break your heart. At least, I could tear it out of your chest and squash it in front of you.~
+
+@315  = ~I am sure you could, although that is not exactly what I meant.~
+
+@316  = ~What did you mean?~
+
+@317  = ~Let's discuss it when you're a bit older.~
+
+@318  = ~Now I'm a bit older. And now... and now again. Now... What about now?~
+
+@319  = ~Well, young Tenya. I believe it is time I give you some advice.~
+
+@320  = ~Advice about what?~
+
+@321  = ~Boys.~
+
+@322  = ~Ewww...~
+
+@323  = ~That is the correct response. However, you will be approaching the age soon when they will start to take much more of interest in you.~
+
+@324  = ~What you must remember is, if they get too close, you must kick them in the groin, like this. And if that does not deter them, then get a knife and slice off their manhoods, and then crush them beneath your heel, like this... ha!~
+
+@325  = ~It's up to you whether to leave them alive after that. But if you do, you might want to consider rubbing their faces in it to make sure they get the point. Or is that dogs? Ah, there is little difference.~
+
+@326  = ~Oh... okay. That was... very helpful. Thank you. Now I'm going to be sick.~
+
+@327  = ~Oh! You are so pretty! We should really curl your hair... oh, or pigtails! Those would look great on you!~
+
+@328  = ~*eye twitching* I-I... should just kill you now...~
+
+@329  = ~I think I have some adorable pink ribbons that would be just precious...~
+
+@330  = ~You stay away from me with those horrid things!~
+
+@331  = ~Come on, just let me try it. You might like it...~
+
+@332  = ~Ahhh!~
+
+@333  = ~Would that not make it awkward for you to get around as well?~
+
+@334  = ~Dost thou mock me?!~
+
+@335  = ~Oh, no. In fact, I think Tiax is so mighty that even the ocean would obey him.~
+
+@336  = ~Yes... YES! Tiax will command the tides!~
+
+@337  = ~All you have to do swim out there and tell the sea to obey you. Make sure it's really far out, so that it hears.~
+
+@338  = ~Tiax will do it!~
+
+@339  = ~I had been led to imagine dark elves were much more intimidating. So far, I'm not impressed at all.~
+
+@340  = ~I have no time for you, brat.~
+
+@341  = ~You should be careful what you say. Do you not know where you are? This is the coast, where my god-mother is venerated and feared above all others.~
+
+@342  = ~Is that right, little one? Your goddess resides out there, in the ocean. Mine is the night itself. She surrounds and blankets everything - the land, the sea, even the sun and stars themselves.~
+
+@343  = ~And also you, right now. So perhaps you should be more careful what you say.~
+
+@344  = ~I'm not scared of the dark, drow.~
+
+@345  = ~Quite right. The dark is nothing to fear. It's the things lurking inside it you must be careful of...~
+
+@346  = ~Hmmm... *whispers* no, there was nothing there...~
+
+@347  = ~Hey! Everyone, w-wait for me!~
+
+@348  = ~Tenya, perhaps you could try to be a little better mannered.~
+
+@349  = ~Oh... you mean, like, remembering to say the magic words to people?~
+
+@350  = ~Well that would be a start, yes.~
+
+@351  = ~Okay!~
+
+@352  = ~*sniffing* Something smells of wee...~
+
+@353  = ~Hm... I think so too...~
+
+@354  = ~It's you. You smell of wee.~
+
+@355  = ~Yes, not exactly Eau de Cormyr, I admit.~
+
+@356  = ~Did you just go in your pants?~
+
+@357  = ~I was too busy focusing on my experiments to go elsewhere.~
+
+@358  = ~... should make him wear a diaper...~
+
+@359  = ~You're a wayward lass.~
+
+@360  = ~What does that mean?~
+
+@361  = ~Means you're lost. There is much pain and anger in you, and you don't know how to deal with it or turn it into something good.~
+
+@362  = ~I'm doing fine with Umberlee guiding me.~
+
+@363  = ~It's far from too late for you to find a more decent path. Let me guide you instead.~
+
+@364  = ~Pft. Bet you like holding little girl's hands, don't you? Get lost.~
+
+@365  = ~So be it. But remember if you change your mind, I'm here and willing to help.~

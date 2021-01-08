@@ -1,0 +1,62 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("tenya")
+    setGlobal("B2#TenScrap","GLOBAL",4)
+    EquipMostDamagingMelee()
+    ActionOverride("B2#Kelda",MoveToObject("tenya"))
+    Wait(2)
+    FaceObject("B2#KELDA")
+    SetSequence(SEQ_ATTACK_SLASH)
+    SmallWait(6)
+    ApplyDamage("B2#KELDA",1,CRUSHING)
+    SmallWait(6)
+    ActionOverride("B2#Kelda",SetSequence(SEQ_ATTACK_JAB))
+    SmallWait(6)
+    SetSequence(SEQ_ATTACK_SLASH)
+    SmallWait(6)
+    ApplyDamage("B2#KELDA",1,CRUSHING)
+    SmallWait(6)
+    Kill("B2#Kelda")
+    ForceSpell("B2#RAN",CLERIC_COMMAND)
+    SmallWait(6)
+    ActionOverride("B2#Ran",SetSequence(SEQ_SLEEP))
+    MoveToObject("B2#Naida")
+    SmallWait(6)
+    SetSequence(SEQ_ATTACK_SLASH)
+    SmallWait(6)
+    ApplyDamage("B2#NAIDA",1,CRUSHING)
+    SmallWait(6)
+    ActionOverride("B2#NAIDA",FaceObject("tenya"))
+    ActionOverride("B2#NAIDA",SetSequence(SEQ_ATTACK_JAB))
+    SmallWait(6)
+    SetSequence(SEQ_ATTACK_SLASH)
+    SmallWait(6)
+    ApplyDamage("B2#NAIDA",1,CRUSHING)
+    SmallWait(6)
+    ActionOverride("B2#NAIDA",SetSequence(SEQ_ATTACK_BACKSLASH))
+    SmallWait(6)
+    SetSequence(SEQ_ATTACK_JAB)
+    SmallWait(6)
+    ApplyDamage("B2#NAIDA",1,CRUSHING)
+    Kill("B2#Naida")
+    Wait(2)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#Ran")
+    ForceSpell(Myself,CLERIC_BLESS)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#Naida")
+    ForceSpell(Myself,CLERIC_CHANT)
+END

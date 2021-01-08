@@ -1,0 +1,21 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,SURE_STONE_SHATTER)
+END
+
+IF
+  Global("B2#TenQuest","GLOBAL",11)
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+
+IF
+  GlobalGT("B2#TenQuest","GLOBAL",11)
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,SURE_STONE_SHATTER)
+END

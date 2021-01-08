@@ -1,0 +1,28 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("B2#LETHE")
+    setGlobal("B2#TenQuest","GLOBAL",5)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)
+    ApplySpell(Myself,WIZARD_PROTECTION_FROM_COLD)
+    Wait(3)
+    ForceSpell("tenya",MEPHIT_ICE_SHARD)
+    Wait(2)
+    ActionOverride("tenya",RunAwayFrom("B2#LETHE",15))
+    Wait(2)
+    ApplySpell(Myself,WIZARD_BREACH)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("tenya")
+    ApplySpell(Myself,RESTORE_FULL_HEALTH)
+    FaceObject("B2#LETHE")
+    Wait(1)
+    ForceSpell("B2#LETHE",MEPHIT_ICE_SHARD)
+END
+
