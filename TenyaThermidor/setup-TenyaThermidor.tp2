@@ -7,12 +7,57 @@ AUTO_TRA ~TenyaThermidor/tra/%s~
 
 ALWAYS
 	OUTER_TEXT_SPRINT "AR" "AR"
+	OUTER_SPRINT ~jrnj~ ~~
+	OUTER_SPRINT ~jrnj0~ ~~
+	OUTER_SPRINT ~jrnj00~ ~~
 	ACTION_IF ( GAME_IS ~eet~ ) BEGIN
 		OUTER_TEXT_SPRINT "AR" "BG"
 		OUTER_SPRINT ~jrnj~ ~2~
 		OUTER_SPRINT ~jrnj0~ ~20~
 		OUTER_SPRINT ~jrnj00~ ~200~
 	END
+
+DEFINE_PATCH_FUNCTION GET_SCRIPT_BLOCK
+INT_VAR
+  start_offset  = 0
+  reverse       = 0
+STR_VAR
+  search_regexp = ~~
+RET
+  script_block
+  start_offset
+  end_offset
+BEGIN
+  SET offset = start_offset
+  PATCH_IF (offset < 0) BEGIN SET offset = 0 END
+  PATCH_IF (offset > BUFFER_LENGTH) BEGIN SET offset = BUFFER_LENGTH END
+
+  TEXT_SPRINT script_block ~~
+  SET start_offset = "-1"
+  SET end_offset = "-1"
+
+  PATCH_IF (NOT ~%search_regexp%~ STR_EQ ~~) BEGIN
+    PATCH_IF (reverse) BEGIN
+      SET offset = RINDEX_BUFFER(~%search_regexp%~ offset)
+    END ELSE BEGIN
+      SET offset = INDEX_BUFFER(~%search_regexp%~ offset)
+    END
+
+    PATCH_IF (offset >= 0) BEGIN
+      SET ofsStart = RINDEX_BUFFER(~^IF$~ offset)
+      PATCH_IF (ofsStart >= 0) BEGIN
+        SET ofsEnd = INDEX_BUFFER(~^END$~ offset)
+        PATCH_IF (ofsEnd >= 0) BEGIN
+          SET ofsEnd += 3
+          READ_ASCII ofsStart script_block (ofsEnd - ofsStart)
+          SET start_offset = ofsStart
+          SET end_offset = ofsEnd
+        END
+      END
+    END
+  END
+END
+
 END
 
 LANGUAGE 
@@ -49,7 +94,7 @@ COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/Player.d~ USING   ~TenyaThermido
 COMPILE EVALUATE_BUFFER ~TenyaThermidor/Dialogue/PUMBERL.d~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~%AR%0901.bcs~ BEGIN
-	COPY ~TenyaThermidor/Scripts/AR0901.baf~ ~override/%AR%0901.bcs~ COMPILE_BAF_TO_BCS
+	COPY ~TenyaThermidor/Scripts/AR0901.baf~ ~override/%AR%0901.bcs~ EVALUATE_BUFFER COMPILE_BAF_TO_BCS
 END ELSE BEGIN
 	EXTEND_TOP ~%AR%0901.bcs~ ~TenyaThermidor/Scripts/AR0901.baf~ EVALUATE_BUFFER
 END
@@ -209,6 +254,13 @@ APPEND ~INTERDIA.2DA~
 ~Tenya B2#TenyB~
 UNLESS ~Tenya~
 
+ACTION_MATCH ~%LANGUAGE%~ WITH
+	~english~ BEGIN OUTER_SPRINT lang ~en_US~ END
+	~russian~ BEGIN OUTER_SPRINT lang ~ru_RU~ END
+	DEFAULT
+		OUTER_SPRINT lang ~en_US~
+END
+
 ACTION_IF GAME_IS ~eet~ BEGIN
 	INCLUDE ~EET/other/EET_functions.tph~
 	LAF ~EET_NPC_TRANSITION~
@@ -217,7 +269,29 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 		STR_VAR
 			dv = "Tenya"
 			override_BG1 = "B2#TENYA"
-			traFile = EVAL "TenyaThermidor/tra/%LANGUAGE%/TTsetup.tra"
-			string = "@5000002"
+			traFile = EVAL "EET/lang/%lang%/compatibility.tra"
+			string = "@5000008"
 	END
+END
+
+ACTION_IF (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) OR (GAME_IS ~eet~) BEGIN
+	COPY_EXISTING ~BD0103.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			LPF GET_SCRIPT_BLOCK STR_VAR search_regexp = ~BD_HAS_BAELOTHS_ROBE~ RET script_block END
+			TEXT_SPRINT ~add_block~ ~%script_block%
+
+IF
+	OR(2)
+		InMyArea("Tenya")
+		InPartyAllowDead("Tenya")
+	GlobalLT("BD_PLOT","GLOBAL",51)
+THEN
+	RESPONSE #100
+		ActionOverride("Tenya",LeaveParty())
+		SmallWait(1)
+		ActionOverride("Tenya",DestroySelf())
+		Continue()
+END~
+			REPLACE_TEXTUALLY ~%script_block%~ ~%add_block%~
+		END
 END
