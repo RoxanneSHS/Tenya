@@ -10,7 +10,7 @@ THEN
     Wait(2)
     FaceObject("tenya")
     ActionOverride("tenya",TransformItem("B2#Bowl","B2#BowlG"))
-    DisplayStringHead("B2#LETHE",~Thank you, child.~)
+    DisplayStringHead("B2#LETHE",@5000002)
     Wait(2)
     FaceObject("tenya")
     SetSequence(SEQ_ATTACK_BACKSLASH)

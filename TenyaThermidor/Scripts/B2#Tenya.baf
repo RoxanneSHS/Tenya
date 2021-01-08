@@ -112,7 +112,8 @@ IF
   CheckStatGT(Myself,9,LEVEL)
 THEN
   RESPONSE #100
-    ApplySpell(Myself,B2#TNSTM)
+    //ApplySpell(Myself,B2#TNSTM)
+    ApplySpellRES("B2#TNSTM",Myself)
     SetGlobal("TenStorm10","LOCALS",1)
 END
 
@@ -122,7 +123,8 @@ IF
   CheckStatGT(Myself,19,LEVEL)
 THEN
   RESPONSE #100
-    ApplySpell(Myself,B2#TNSTM)
+    //ApplySpell(Myself,B2#TNSTM)
+    ApplySpellRES("B2#TNSTM",Myself)
     SetGlobal("TenStorm20","LOCALS",1)
 END
 
