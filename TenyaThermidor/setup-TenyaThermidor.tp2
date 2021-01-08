@@ -1,13 +1,8 @@
-// --------------------------------------------
-// Basics
 BACKUP ~TenyaThermidor/backup~
 AUTHOR ~Coutelier (mail@coutelier.org.uk)~
 
-// --------------------------------------------
-// BG Tenya Thermidor v2.0
-// --------------------------------------------
+VERSION ~v2.0~
 
-// Language
 AUTO_TRA ~TenyaThermidor/tra/%s~
 
 ALWAYS
@@ -29,14 +24,13 @@ LANGUAGE
          ~russian~
          ~TenyaThermidor/tra/russian/TTsetup.tra~
 
-// Component setup
+
 BEGIN ~Tenya Thermidor for BG:EE and EET~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ ~Version for BGEE or EET only~
 
-//Spells
+
 ADD_SPELL "TenyaThermidor/Spells/B2#TNSTM.spl" 4 0 B2#TNSTM
 
-// Compiling dialogue...
 COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/Tenya.d~ USING  ~TenyaThermidor/tra/%s/Tenya.tra~
 COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#TenyJ.d~ USING   ~TenyaThermidor/tra/%s/B2#TenyJ.tra~
 COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/B2#TenyP.d~ USING   ~TenyaThermidor/tra/%s/B2#TenyP.tra~
@@ -52,7 +46,6 @@ COMPILE EVALUATE_BUFFER~TenyaThermidor/dialogue/Player.d~ USING   ~TenyaThermido
 
 COMPILE EVALUATE_BUFFER ~TenyaThermidor/Dialogue/PUMBERL.d~
 
-// Area scripts
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~%AR%0901.bcs~ BEGIN
 	COPY ~TenyaThermidor/Scripts/AR0901.baf~ ~override/%AR%0901.bcs~ COMPILE_BAF_TO_BCS
 END ELSE BEGIN
@@ -63,7 +56,6 @@ EXTEND_TOP ~%AR%4500.bcs~ ~TenyaThermidor/Scripts/AR4500.baf~     EVALUATE_BUFFE
 EXTEND_TOP ~%AR%1200.bcs~ ~TenyaThermidor/Scripts/AR1200.baf~     EVALUATE_BUFFER
 EXTEND_TOP ~%AR%0600.bcs~ ~TenyaThermidor/Scripts/AR0600.baf~     EVALUATE_BUFFER
 
-// Scripts
 EXTEND_TOP ~INITNEB.bcs~ ~TenyaThermidor/Scripts/INITNEB.baf~     EVALUATE_BUFFER
 COMPILE ~TenyaThermidor/Scripts/B2#Tenya.baf~ EVALUATE_BUFFER
 COMPILE ~TenyaThermidor/Scripts/B2#Elem.baf~ EVALUATE_BUFFER
@@ -92,12 +84,10 @@ COMPILE ~TenyaThermidor/Scripts/B2#cTS06.baf~ EVALUATE_BUFFER
 COMPILE ~TenyaThermidor/Scripts/B2#cTN01.baf~ EVALUATE_BUFFER
 COMPILE ~TenyaThermidor/Scripts/B2#Ran2.baf~  EVALUATE_BUFFER
 
-// Copying files
 COPY ~TenyaThermidor/Sounds~ ~override~
 COPY ~TenyaThermidor/Portraits~ ~override~
 COPY ~TenyaThermidor/Effects~ ~override~
 
-// Items
 COPY ~TenyaThermidor/Items/B2#Bowl.itm~ ~override~
   SAY DESC @0
 
@@ -136,7 +126,6 @@ COPY ~TenyaThermidor/Items/B2#TNHLB.itm~ ~override~
   SAY NAME2 @8
   SAY DESC @9
 
-// Creatures
 COPY ~TenyaThermidor/Creatures/TENYA.cre~ ~override/TENYA.cre~
   SAY LEADER @10
   SAY TIRED @11
@@ -209,7 +198,6 @@ COPY ~TenyaThermidor/Creatures/B2#RAN2.cre~ ~override/B2#RAN2.cre~
   SAY NAME1 @45
   SAY NAME2 @45
 
-// APPENDS
 
 APPEND ~PDIALOG.2DA~
 ~Tenya B2#TenyP B2#TenyJ~
