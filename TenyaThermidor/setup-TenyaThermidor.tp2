@@ -1,7 +1,7 @@
 BACKUP ~TenyaThermidor/backup~
 AUTHOR ~Coutelier (mail@coutelier.org.uk)~
 
-VERSION ~v2.0~
+VERSION ~v2.1~
 
 AUTO_TRA ~TenyaThermidor/tra/%s~
 
@@ -73,6 +73,21 @@ LANGUAGE
 BEGIN ~Tenya Thermidor for BG:EE and EET~
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ ~Version for BGEE or EET only~
 
+ACTION_IF ( NOT FILE_EXISTS_IN_GAME ~MELWA1.BAM~ ) BEGIN
+COPY ~TenyaThermidor/animation/big~ ~override~
+END
+ACTION_IF ( NOT FILE_EXISTS_IN_GAME ~MEW2A1.BAM~ ) BEGIN
+COPY ~TenyaThermidor/animation/small~ ~override~
+END
+
+OUTER_SET anim_big = 0
+OUTER_SET anim_small = 0
+ACTION_IF FILE_EXISTS_IN_GAME ~MELWA1.BAM~ BEGIN
+	OUTER_SET anim_big = 1
+END
+ACTION_IF FILE_EXISTS_IN_GAME ~MEW2A1.BAM~ BEGIN
+	OUTER_SET anim_small = 1
+END
 
 ADD_SPELL "TenyaThermidor/Spells/B2#TNSTM.spl" 4 0 B2#TNSTM
 
@@ -208,14 +223,23 @@ COPY ~TenyaThermidor/Creatures/TENYA.cre~ ~override/TENYA.cre~
 COPY ~TenyaThermidor/Creatures/B2#Elem1.cre~ ~override/B2#Elem1.cre~
   SAY NAME1 @40
   SAY NAME2 @40
+  PATCH_IF ( anim_small ) BEGIN
+    WRITE_LONG 0x28 0xE26C
+    END
 
 COPY ~TenyaThermidor/Creatures/B2#Elem2.cre~ ~override/B2#Elem2.cre~
   SAY NAME1 @41
   SAY NAME2 @41
+  PATCH_IF ( anim_small ) BEGIN
+    WRITE_LONG 0x28 0xE26C
+  END
 
 COPY ~TenyaThermidor/Creatures/B2#Elem3.cre~ ~override/B2#Elem3.cre~
   SAY NAME1 @42
   SAY NAME2 @42
+  PATCH_IF ( anim_big ) BEGIN
+    WRITE_LONG 0x28 0xE24D
+  END
 
 COPY ~TenyaThermidor/Creatures/B2#NAIDA.cre~ ~override/B2#NAIDA.cre~
   SAY NAME1 @43
@@ -236,10 +260,16 @@ COPY ~TenyaThermidor/Creatures/B2#LETHE.cre~ ~override/B2#LETHE.cre~
 COPY ~TenyaThermidor/Creatures/B2#ElemL.cre~ ~override/B2#ElemL.cre~
   SAY NAME1 @41
   SAY NAME2 @41
+  PATCH_IF ( anim_small ) BEGIN
+    WRITE_LONG 0x28 0xE26C
+  END
 
 COPY ~TenyaThermidor/Creatures/B2#ElemT.cre~ ~override/B2#ElemT.cre~
   SAY NAME1 @41
   SAY NAME2 @41
+  PATCH_IF ( anim_small ) BEGIN
+    WRITE_LONG 0x28 0xE26C
+  END
 
 COPY ~TenyaThermidor/Creatures/B2#RAN2.cre~ ~override/B2#RAN2.cre~
   SAY NAME1 @45
