@@ -1,7 +1,7 @@
 BACKUP ~TenyaThermidor/backup~
 AUTHOR ~Coutelier (mail@coutelier.org.uk)~
 
-VERSION ~v2.1~
+VERSION ~v2.2~
 
 AUTO_TRA ~TenyaThermidor/tra/%s~
 
