@@ -18,7 +18,7 @@ Global("TalkedToTenya","GLOBAL",1)
 Global("TENAPPEAR","GLOBAL",0)
 Global("TremainQuest","Global",1)
 GlobalLT("HelpTenya","GLOBAL",2)
-~ THEN REPLY #1412 DO ~SetGlobal("HelpTenya","GLOBAL",3)~ GOTO 7
+~ THEN REPLY #%jrnj0%1412 DO ~SetGlobal("HelpTenya","GLOBAL",3)~ GOTO 7
 END
 
 ALTER_TRANS PUMBERL
